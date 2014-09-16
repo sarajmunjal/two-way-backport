@@ -20,7 +20,6 @@ import android.app.Activity;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.RecyclerView;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,9 +27,11 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import static android.support.v7.widget.RecyclerView.SCROLL_STATE_IDLE;
-import static android.support.v7.widget.RecyclerView.SCROLL_STATE_DRAGGING;
-import static android.support.v7.widget.RecyclerView.SCROLL_STATE_SETTLING;
+import com.twotoasters.android.support.v7.widget.RecyclerView;
+
+import static com.twotoasters.android.support.v7.widget.RecyclerView.SCROLL_STATE_IDLE;
+import static com.twotoasters.android.support.v7.widget.RecyclerView.SCROLL_STATE_DRAGGING;
+import static com.twotoasters.android.support.v7.widget.RecyclerView.SCROLL_STATE_SETTLING;
 
 import org.lucasr.twowayview.ItemClickSupport;
 import org.lucasr.twowayview.ItemClickSupport.OnItemClickListener;
@@ -109,7 +110,7 @@ public class LayoutFragment extends Fragment {
             }
         });
 
-        mRecyclerView.setOnScrollListener(new RecyclerView.OnScrollListener() {
+        mRecyclerView.setOnScrollListener(new com.twotoasters.android.support.v7.widget.RecyclerView.OnScrollListener() {
             @Override
             public void onScrollStateChanged(int scrollState) {
                 updateState(scrollState);

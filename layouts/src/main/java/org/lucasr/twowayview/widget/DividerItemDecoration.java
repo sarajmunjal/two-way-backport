@@ -5,16 +5,16 @@ import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.RecyclerView.ItemDecoration;
+import com.twotoasters.android.support.v7.widget.RecyclerView;
+import com.twotoasters.android.support.v7.widget.RecyclerView.ItemDecoration;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup.MarginLayoutParams;
 
 /**
- * {@link android.support.v7.widget.RecyclerView.ItemDecoration} that draws
+ * {@link com.twotoasters.android.support.v7.widget.RecyclerView.ItemDecoration} that draws
  * vertical and horizontal dividers between the items of the target
- * {@link android.support.v7.widget.RecyclerView}.
+ * {@link com.twotoasters.android.support.v7.widget.RecyclerView}.
  */
 public class DividerItemDecoration extends ItemDecoration {
     private final ItemSpacingOffsets mItemSpacing;
@@ -118,7 +118,7 @@ public class DividerItemDecoration extends ItemDecoration {
     }
 
     @Override
-    public void getItemOffsets(Rect outRect, int itemPosition, RecyclerView parent) {
+    public void getItemOffsets(Rect outRect, int itemPosition, com.twotoasters.android.support.v7.widget.RecyclerView parent) {
         mItemSpacing.getItemOffsets(outRect, itemPosition, parent);
     }
 }

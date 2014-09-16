@@ -1,9 +1,11 @@
 package org.lucasr.twowayview;
 
-import android.support.v7.widget.RecyclerView;
+
 import android.view.HapticFeedbackConstants;
 import android.view.SoundEffectConstants;
 import android.view.View;
+
+import com.twotoasters.android.support.v7.widget.RecyclerView;
 
 public class ItemClickSupport {
     /**
@@ -52,7 +54,7 @@ public class ItemClickSupport {
         mRecyclerView = recyclerView;
 
         mTouchListener = new TouchListener(recyclerView);
-        recyclerView.addOnItemTouchListener(mTouchListener);
+        recyclerView.addOnItemTouchListener((RecyclerView.OnItemTouchListener) mTouchListener);
     }
 
     /**

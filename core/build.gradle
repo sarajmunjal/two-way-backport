@@ -1,15 +1,16 @@
-apply plugin: 'com.android.library'
+apply plugin: 'android-library'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    compile 'com.android.support:recyclerview-v7:+'
+    compile 'com.twotoasters.RecyclerViewLib:library:1.0.+@aar'
+    compile 'com.android.support:support-v4:20+'
 }
 
 android {
-    compileSdkVersion 'android-L'
+    compileSdkVersion 19
     buildToolsVersion '20.0.0'
 }
 

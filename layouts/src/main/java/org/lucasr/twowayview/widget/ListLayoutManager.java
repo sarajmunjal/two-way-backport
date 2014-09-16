@@ -17,8 +17,8 @@
 package org.lucasr.twowayview.widget;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView.Recycler;
-import android.support.v7.widget.RecyclerView.State;
+import com.twotoasters.android.support.v7.widget.RecyclerView.Recycler;
+import com.twotoasters.android.support.v7.widget.RecyclerView.State;
 import android.util.AttributeSet;
 
 import org.lucasr.twowayview.widget.Lanes.LaneInfo;

@@ -4,11 +4,12 @@ import android.content.Context;
 import android.os.Build;
 import android.support.v4.view.GestureDetectorCompat;
 import android.support.v4.view.MotionEventCompat;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.RecyclerView.OnItemTouchListener;
+import com.twotoasters.android.support.v7.widget.RecyclerView.OnItemTouchListener;
 import android.view.GestureDetector.SimpleOnGestureListener;
 import android.view.MotionEvent;
 import android.view.View;
+
+import com.twotoasters.android.support.v7.widget.RecyclerView;
 
 abstract class ClickItemTouchListener implements OnItemTouchListener {
     private static final String LOGTAG = "ClickItemTouchListener";

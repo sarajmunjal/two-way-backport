@@ -18,7 +18,7 @@ package org.lucasr.twowayview;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.support.v7.widget.RecyclerView;
+import com.twotoasters.android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 
@@ -105,4 +105,5 @@ public class TwoWayView extends RecyclerView {
         TwoWayLayoutManager layout = (TwoWayLayoutManager) getLayoutManager();
         return layout.getFirstVisiblePosition();
     }
+
 }
